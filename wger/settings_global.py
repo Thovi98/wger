@@ -390,8 +390,8 @@ THUMBNAIL_ALIASES = {
 
 # Path to uploaded files
 # Absolute filesystem path to the directory that will hold user-uploaded files.
-STATIC_ROOT = env("STATIC_ROOT", default=str(ROOT_DIR("/home/wger/static")))
-MEDIA_ROOT = env("MEDIA_ROOT", default=str(ROOT_DIR("/home/wger/media")))
+STATIC_ROOT = env("STATIC_ROOT", default=str(BASE_DIR("/home/wger/static")))
+MEDIA_ROOT = env("MEDIA_ROOT", default=str(BASE_DIR("/home/wger/media")))
 USE_S3 = os.getenv('USE_S3') == 'TRUE'
 
 if USE_S3:

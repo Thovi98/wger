@@ -18,6 +18,9 @@ import os
 import re
 import sys
 from datetime import timedelta
+import environ
+env = environ.Env()
+environ.Env.read_env()
 
 # wger
 from wger.utils.constants import DOWNLOAD_INGREDIENT_WGER
